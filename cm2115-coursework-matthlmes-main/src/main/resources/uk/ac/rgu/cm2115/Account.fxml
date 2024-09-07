@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.rgu.cm2115.AccountController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9aaab" height="587.0" layoutX="315.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" width="51.0" />
+      <Label layoutX="72.0" layoutY="133.0" text="Account Name">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button fx:id="BackToCustomerbtn" layoutX="729.0" layoutY="509.0" mnemonicParsing="false" onAction="#BackToCustomerClick" text="Back To Customer" />
+      <Button fx:id="DepositBtn" layoutX="411.0" layoutY="278.0" mnemonicParsing="false" onAction="#depositButton" text="Deposit Amount" />
+      <Button fx:id="withdrawBtn" layoutX="628.0" layoutY="278.0" mnemonicParsing="false" onAction="#withdrawButton" text="Withdraw Amount" />
+      <Label layoutX="85.0" layoutY="247.0" text="Sort Code">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="536.0" layoutY="144.0" text="Balance">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="66.0" layoutY="364.0" text="Account Number">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="accountNameLabel" layoutX="39.0" layoutY="159.0" prefHeight="17.0" prefWidth="103.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="accountSortCodeLabel" layoutX="39.0" layoutY="271.0" prefHeight="38.0" prefWidth="134.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="accountNumberLabel" layoutX="39.0" layoutY="381.0" prefHeight="38.0" prefWidth="159.0">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Label fx:id="accountBalanceLabel" layoutX="526.0" layoutY="191.0" prefHeight="45.0" prefWidth="72.0">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <Label layoutX="63.0" layoutY="61.0" text="Account Details">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="61.0" text="Withdraw / Deposit">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

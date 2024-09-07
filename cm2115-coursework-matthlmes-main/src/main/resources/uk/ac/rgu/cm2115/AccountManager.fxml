@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.ac.rgu.cm2115.AccountManagerController">
+   <children>
+      <ListView id="CustomerList" fx:id="CustomerList" layoutX="531.0" layoutY="171.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="531.0" layoutY="153.0" text="Customer List" />
+      <TextField fx:id="newCustomerNameTextField" layoutX="179.0" layoutY="186.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="34.0" layoutY="190.0" text="New Customer Name" />
+      <Button fx:id="AddNewCustomerButton" layoutX="106.0" layoutY="370.0" mnemonicParsing="false" onAction="#AddNewCustomer" prefHeight="25.0" prefWidth="146.0" text="Add New Customer" />
+      <Label layoutX="34.0" layoutY="245.0" text="New Customer Address" />
+      <TextField fx:id="newCustomerAddressTextField" layoutX="179.0" layoutY="241.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="34.0" layoutY="299.0" text="Account Type" />
+      <ComboBox fx:id="newCustomerAccountTypeComboBox" layoutX="179.0" layoutY="295.0" prefWidth="150.0" />
+      <Button id="ViewCustomerButton" fx:id="ViewSelectedCustomerBtn" layoutX="564.0" layoutY="395.0" mnemonicParsing="false" onAction="#ViewCustomerButtonClick" text="View Customer Details" />
+      <Button layoutX="121.0" layoutY="506.0" mnemonicParsing="false" onAction="#toCSVClick" text="To CSV" />
+      <Label layoutX="107.0" layoutY="90.0" text="Add New Customer">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="549.0" layoutY="90.0" text="View Customers">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="501.0" text="To CSV">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9aaab" height="587.0" layoutX="404.0" stroke="BLACK" strokeType="INSIDE" width="73.0" />
+   </children>
+</AnchorPane>
